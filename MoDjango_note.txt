@@ -1,6 +1,8 @@
 安装django
     离线
         进到django源码目录执行python setup.py install
+    在线
+        pip install django或pip install django==版本号
 
 
 
@@ -11,6 +13,13 @@ python -m django --version
 python
 	>import django
 	>django.get_version()
+
+
+
+
+
+开发django网站参考
+    https://blog.csdn.net/u010815486/article/details/84244832
 
 
 
