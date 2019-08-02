@@ -1,0 +1,12 @@
+{% include "web_app/head.html" %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <h3>{{News.title}}</h3>
+            {% autoescape off %}
+            {{News.content}}
+            {% endautoescape %}
+        </div>
+    </div>
+</div>
+{% include "web_app/foot.html" %}

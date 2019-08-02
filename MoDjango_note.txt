@@ -1,0 +1,63 @@
+安装django
+    离线
+        进到django源码目录执行python setup.py install
+
+
+
+
+django版本号
+django-admin --version
+python -m django --version
+python
+	>import django
+	>django.get_version()
+
+
+
+运行
+python manage.py runserver
+python manage.py runserver IP:PORT
+
+
+
+生成Django默认的表
+更新数据表
+python manage.py migrate
+
+
+创建一个超级管理员
+python manage.py createsuperuser
+
+
+修改后台管理用户密码（表auth_user）
+python manage.py changepassword ???
+
+
+更新数据模型
+python manage.py makemigrations
+
+
+
+查看框架自动生成APP_NAME的sql语句，0001是APP_NAME目录下migrations目录下文件0001_initial.py的开头
+python manage.py sqlmigrate APP_NAME 0001
+
+
+
+
+django安装目录
+pip show django
+
+
+django后台
+http://127.0.0.1:8000/admin/
+
+
+django前台
+http://127.0.0.1:8000/news/?id=1
+http://127.0.0.1:8000/get_news/?id=1
+
+
+注意
+    若django不是原来版本，管理后台则使用安装django的默认页面，要删除目录：
+    rm -r /MoDjango/static/admin
+    rm -r /MoDjango/templates/admin /MoDjango/templates/registration
